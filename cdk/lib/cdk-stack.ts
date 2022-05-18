@@ -6,13 +6,7 @@ import {
   RemovalPolicy,
 } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import * as sqs from 'aws-cdk-lib/aws-sqs';
-import * as events from 'aws-cdk-lib/aws-events';
-import * as targets from 'aws-cdk-lib/aws-events-targets';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
-import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
-import * as apigateway from 'aws-cdk-lib/aws-apigateway';
-import * as cognito from 'aws-cdk-lib/aws-cognito';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import {
   CorsHttpMethod,
@@ -28,9 +22,6 @@ export class CdkStack extends Stack {
 
     const nodeRuntime: lambda.Runtime = lambda.Runtime.NODEJS_14_X;
     const lambdaMemory = parseInt(Utils.getEnv('LAMBDA_MEMORY', '256'));
-
-    // TODO deploy front-end and set corsOrigin
-    const corsOrigin = Utils.getEnv('CORS_ORIGIN', '*');
 
     // ========================================================================
     // Resource: AWS Lambda Function - CRUD API Backend
