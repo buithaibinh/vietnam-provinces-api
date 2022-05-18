@@ -1,0 +1,21 @@
+{
+  "name": "vietnam-provinces-api",
+  "version": "0.0.0",
+  "author": {
+    "name": "Binh Bui",
+    "url": "git+https://github.com/buithaibinh/vietnam-provinces.git"
+  },
+  "description": "Query data includes cities, provinces, wards",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.97"
+  },
+  "dependencies": {
+    "@middy/core": "^3.0.3",
+    "@middy/http-error-handler": "^3.0.3",
+    "http-errors": "^2.0.0",
+    "vietnam-provinces": "^0.0.4"
+  }
+}
