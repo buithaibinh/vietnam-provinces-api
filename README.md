@@ -1,6 +1,6 @@
 # Vietnam Provinces api with lambda + http api gateway.
 
-API to list Viet Nam administrative divisions.
+API to list Viet Nam administrative divisions. An implementation of npm lib [vietnam-provinces](https://www.npmjs.com/package/vietnam-provinces)
 
 # Getting Started - Mac / Linux
 ## Pre-requisites
